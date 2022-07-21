@@ -1,0 +1,83 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__link{
+        display: flex;
+        padding-right: 20px;
+    }
+    &__logo{
+        margin-top: 20px;
+        max-width: 50%;
+        width: 100%;
+    }
+    &__contacts{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 450px;
+    }
+    &__contacts-phone{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 23px;
+        color: #2B3037;
+        text-decoration: none;   
+        padding-right: 20px;
+    }
+    &__contacts-pochta{ 
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 23px;
+        color: #2B3037;
+        text-decoration: none;
+    }
+    &__contacts-button{
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 23px;
+        color: #2B3037;
+        text-decoration: none;
+        
+    }
+}
+@media (max-width: 1200px){
+    .header{
+        flex-wrap: none;
+        width: 102%;
+    }
+    
+    
+}
+
+
+@media (max-width: 960px){
+    .header{
+        
+        
+        &__contacts-button{
+            display: flex;
+            padding-right: 15px;
+            
+        }
+        &__contacts{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+        }
+    }
+}
+@media (max-width: 640px){
+    .header{
+        &__contacts{
+            width: 100%;
+        }
+        &__link{
+            display: block;
+        }
+
+    }
+}

@@ -1,0 +1,45 @@
+.footer{
+    padding: 30px 0 30px 0;
+    &__dflex{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__site{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: #2B3037;
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: #2B3037;
+
+    }
+    &__production{
+        width: 210px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img{
+        height: fit-content;
+        margin-top: 5px;
+    }
+    
+}
+
+@media (max-width: 640px){
+    .footer{
+        &__site{
+            font-size: 18px;
+            line-height: 21px;
+        }
+        &__text{
+            font-size: 18px;
+            line-height: 21px;
+
+        }
+    }
+
+}

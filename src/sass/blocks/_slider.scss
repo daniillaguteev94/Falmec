@@ -1,0 +1,121 @@
+
+
+.slider{
+    position: relative;
+    margin-bottom: 100px;
+
+
+    
+.swiper-slide{
+    width: auto;
+}
+    
+    
+
+    &__block-bg1{
+        background: url('../img/Rectangle4.png') center (center/cover) no-repeat;
+        width: 414px;
+        height: 414px;
+    }
+    &__block-bg2{
+        background: url('../img/Rectangle5.png') center (center/cover) no-repeat;
+        width: 523px;
+        height: 414px;
+    }
+    &__block-bg3{
+        background: url('../img/Rectangle6.png') center (center/cover) no-repeat;
+        width: 304px;
+        height: 414px;
+
+    }
+    &__top{
+        padding: 15px 0 0 20px;
+        width: 260px;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 35px;
+        color: #FFFFFF;
+    }
+    &__bottom{
+        display: flex;
+        flex-direction: row;
+        padding-left: 20px;
+        position: absolute;
+        bottom: 20px;
+    }
+    &__content{
+        display: block;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: #FFFFFF;
+        padding-right: 12px;  
+    
+    }
+
+}
+
+@media (max-width: 1200px){
+    .slider{
+        &__block-bg1{
+            width: 280px;
+            height: 280px;
+        }
+        &__block-bg2{
+            width: 355px;
+            height: 280px;
+        }
+        &__block-bg3{
+            width: 205px;
+            height: 280px;
+        }
+        &__top{
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            width: 60%;
+        }
+        &__content{
+            font-size: 16px;
+            line-height: 19px;
+            padding-right: 10px;
+        }
+
+    }
+}
+
+@media (max-width: 960px){
+    
+    .slider{
+        &__block-bg1{
+            width: 193px;
+            height: 194px;
+        }
+        &__block-bg2{
+            width: 245px;
+            height: 194px;
+        }
+        &__block-bg3{
+            width: 142px;
+            height: 194px;
+        }
+        &__top{
+            font-size: 18px;
+            line-height: 21px;
+            
+        }
+        &__content{
+            font-size: 16px;
+            line-height: 19px;
+        }
+        .d-none{
+            display: none;
+        }
+        &__bottom{
+            padding-left: 12px;
+        }
+        &__content{
+            padding-right: 8px;
+        }
+    }
+}

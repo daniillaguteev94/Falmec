@@ -1,0 +1,105 @@
+.carousel{
+  position: relative;
+  margin-bottom: 100px;
+  &__h2{
+    padding-bottom: 47px;
+  }
+  &__content{
+    display: block;
+    position: relative;
+    padding: 0 22px 0 22px;
+    height: 402px;
+    background: url('../img/slide.png') center (center/cover) no-repeat;
+  }
+  &__content-title{
+    position: absolute;
+    bottom: 32px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    color: #2B3037;
+    width: 250px;
+    
+  }
+  &__navigation-next{
+    cursor: pointer;
+    background: url('../img/right.svg') center (center/cover) no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 54px;
+    height: 54px;
+  }
+  &__navigation-back{
+    cursor: pointer;
+    background: url('../img/left.svg') center (center/cover) no-repeat;
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    top: 0;
+    right: 75px;
+  }
+
+  &-sale__navigation-next{
+    cursor: pointer;
+    background: url('../img/right.svg') center (center/cover) no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 54px;
+    height: 54px;
+  }
+  &-sale__navigation-back{
+    cursor: pointer;
+    background: url('../img/left.svg') center (center/cover) no-repeat;
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    top: 0;
+    right: 75px;
+  }
+
+}
+
+@media (max-width: 1200px){
+  .carousel{
+    &__content{
+      width: auto;
+      height: 270px;
+    }
+    
+    &__content-title{
+      width: 80%;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+    }
+
+  }
+}
+
+@media (max-width: 960px){
+  .carousel{
+    &__content-title{
+      bottom: 10px;
+      width: 83%;
+      font-size: 18px;
+      line-height: 21px;
+    }
+    &__content{
+      padding-left: 10px;
+      width: auto;
+      height: 180px;
+    }
+  }
+}
+@media (max-width: 640px){
+  .carousel{
+
+  }
+}
+
+  
+
+  
+
